@@ -1,0 +1,33 @@
+﻿<Window x:Class="CoboxAndLibox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoboxAndLibox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock></TextBlock>
+        <TextBox x:Name="newtextadd" Text=""></TextBox>
+        <StackPanel Orientation="Horizontal">
+        <Button x:Name="b" Click="b_Click" Height="30" Margin="20,0,0,0" Content="Add" Width="60"></Button>
+        <Button x:Name="c" Click="c_Click" Height="30" Margin="20,0,0,0" Content="Clear" Width="60" ></Button>
+        </StackPanel>
+        <ComboBox x:Name="combo" >
+            <ComboBoxItem>India</ComboBoxItem>
+            <ComboBoxItem>Canada</ComboBoxItem>
+            <ComboBoxItem>United states</ComboBoxItem>
+            <ComboBoxItem>Russia</ComboBoxItem>
+            <ComboBoxItem>Brazil</ComboBoxItem>
+        </ComboBox>
+        <TextBlock></TextBlock>
+        <ListBox x:Name="lb" SelectionChanged="ListBox_SelectionChanged" SelectionMode="Multiple">
+            <ListBoxItem IsSelected="True">C#</ListBoxItem>
+            <ListBoxItem>java</ListBoxItem>
+            <ListBoxItem>C++</ListBoxItem>
+            <ListBoxItem>C</ListBoxItem>
+        </ListBox>
+        
+        
+    </StackPanel>
+</Window>
